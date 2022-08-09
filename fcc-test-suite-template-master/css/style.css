@@ -12,10 +12,7 @@ body{
     position: relative;
     background-color: rgba(0, 0, 255, 0.377);
 }
-.container{
-    padding: 0 15px;
-    margin: auto;
-}
+
 body::before{
     content: "";
     /* background-image: url(../images/survey-form-background.jpeg); */
@@ -24,3 +21,42 @@ body::before{
     height: 100%;
     z-index: 2;
 }
+
+.container{
+    padding: 50px 15px;
+    margin: auto;
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.title h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
