@@ -1,4 +1,6 @@
 :root{
+    --main-size: 20px;
+    --form-margin: 20px;
 
 }
 *{
@@ -43,20 +45,52 @@ body::before{
 
 .title p{
     margin-top: 10px;
-    font-size: 20px;
+    font-size: var(--main-size);
     font-style: italic;
 }
 
 form{
     display: flex;
     flex-direction: column;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.70);
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: flex-start;
+    color: white;
 }
 
+form input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: var(--form-margin);
+}
+form label{
+    font-size: var(--main-size);
+    margin: 5px;
+}
+form select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: var(--form-margin);
+}
+form textarea{
+    width: 100%;
+    margin-bottom: var(--form-margin);
+}
 
-
-
-
-
-
-
-
+form [type="radio"],form [type="checkbox"]{
+    width: auto;
+}
+form [type="submit"] {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: green;
+    color: white;
+    font-size: var(--main-size);
+}
