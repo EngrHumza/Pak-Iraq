@@ -12,7 +12,7 @@
 }
 body{
     position: relative;
-    background-color: rgba(0, 0, 255, 0.377);
+    background-color: rgb(96 0 131);
 }
 
 body::before{
@@ -85,6 +85,7 @@ form textarea{
 form [type="radio"],form [type="checkbox"]{
     width: auto;
 }
+
 form [type="submit"] {
     border-radius: 5px;
     width: 100%;
@@ -94,3 +95,6 @@ form [type="submit"] {
     color: white;
     font-size: var(--main-size);
 }
+
+
+
